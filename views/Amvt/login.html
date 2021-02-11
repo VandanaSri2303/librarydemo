@@ -1,0 +1,87 @@
+
+<div ng-controller="loginCtrl">
+    <div class="body">
+            <div class="middle-box text-center loginscreen" style="margin-left: 0px;border-radius:20px">
+                <div class="widgets-container" style="background:white; color:#000059;border-color: #cb132b;
+
+                width: 426px; height: 331px;padding-left: 30px; padding-right: 30px;padding-top: 30px; padding-bottom: 30px;border-radius:40px">            
+                    <h3 style="font-family: Arial, Helvetica, sans-serif">Welcome to RotaryClub Dashboard </h3>
+                    <form class="top15">
+                             
+                        <div class="form-group">
+                                <input 
+                                style="background-color: transparent !important;color: #000059;border-top-width: 0px;;border-left-width: 0px;;border-right-width: 0px
+                                ;border-bottom-width: 2px solid #000059 !important;color: #000059"
+                                required="" placeholder="Username" class="form-control" type="text" ng-model="l.username">
+                            <!-- <input required="" placeholder="Username" class="form-control" type="text" ng-model="username"> -->
+                        </div>
+                        <div class="form-group">
+                                <input
+                                style="background-color: transparent !important;color: #000059;border-top-width: 0px;;border-left-width: 0px;;border-right-width: 0px
+                                ;border-bottom-width: 2px solid #000059 !important;color: #000059"
+                                required="" placeholder="Password" class="form-control" type="password" ng-model="l.password" id="myInput">
+
+                            <!-- <input required="" placeholder="Password" class="form-control" type="password" ng-model="password" id="myInput"> -->
+                           <br>
+                            <input type="checkbox" onclick="myFunction()">Show Password
+
+                        </div>
+                        <label>                                                                                                      
+                                <span> </span><input type="reset" value="Login" ng-click="getLoggedIn(l)"
+                                  style="padding-left: 0px;border-radius:50px;background: rgb(223, 136, 7);;width: 88px;height: 32px;" />
+                              </label>
+                        <!-- <button class="btn green block full-width bottom15" type="submit" ng-click="getLoggedIn()">Login</button> -->
+                    </form>
+                    <p class="top15" >  <a href="https://www.amaravathisoftware.com/" target="_blank" style="color: #000059">Copyright Amaravathi Software Innovations Pvt Ltd &copy; 2019
+                    </a>
+                    </p>
+                </div>
+            </div>
+    </div>
+
+</div>
+<style>
+
+    .green-bg {
+        background-color: white;
+    }
+        .middle-box {
+            max-width: 400px;
+            z-index: 100;
+            margin: 0 auto;
+            padding-top: 250px;
+        }
+    
+      body {
+         background-image: url('images/pg.png');
+            background-color: white;
+              width:100%;
+            /* background-repeat: no-repeat; */
+        } 
+    
+        .widgets-container {
+            background: rgba(0,0,0,.5)  0 0;
+            border: 1px solid #e7eaec;
+            box-sizing: border-box;
+            margin: 0 auto 0;
+            padding: 15px;
+            width: 100%;
+            color: #ffff;
+            margin-left: 100%;
+            filter: drop-shadow(4px 4px 4px rgba(211, 124, 26, 0.63));
+
+        }
+    
+    
+    </style>
+    
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>

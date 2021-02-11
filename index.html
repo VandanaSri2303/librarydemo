@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html ng-app="adminbag">
+
+<head>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Bootstrap -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="simple-line-icons/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main adminbag CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link id="adminAngular" href="css/main.css" rel="stylesheet">
+    <link href="css/main.media.css" rel="stylesheet">
+    <!-- light css -->
+    <link href="css/light.css" rel="stylesheet">
+
+    <!-- adminbag demo css-->
+    <link href="css/adminbagdemo.css" rel="stylesheet">
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in adminbag theme on diferent view -->
+
+<body ng-controller="MainCtrl as main" class="{{$state.current.data.specialClass}}">
+
+    <!-- include header -->
+    <div ng-include="'views/common/header.html'"></div>
+    <!-- include navigation -->
+    <div ng-include="'views/common/navigation.html'"></div>
+
+    <!-- Main view  -->
+    <div ui-view></div>
+
+    <!-- include footer -->
+    <div ng-include="'views/common/footer.html'"></div>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery/jquery-3.1.1.min.js"></script>
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Peace JS -->
+    <!-- <script src="js/plugins/pace/pace.min.js"></script> -->
+
+    <!-- Main Angular scripts-->
+
+    <!--image upload-->
+    <script type="text/javascript" src="js/upload_images/ng-file-upload.min.js"></script>
+    <script type="text/javascript" src="js/upload_images/ng-file-upload-shim.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+
+    
+
+    
+
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="js/ui-router/angular-ui-router.min.js"></script>
+    <script src="js/angular/angular-animate.min.js"></script>
+    <script src="js/bootstrap/ui-bootstrap-tpls-1.1.2.min.js"></script>
+
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/plugins/moment/moment.min.js"></script>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
+
+
+    <!-- <script type="text/javascript" src="js/datepicker/jquery.min.js"></script>
+        <script type="text/javascript" src="js/datepicker/moment.min.js"></script>
+        <script type="text/javascript" src="js/datepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/datepicker/daterangepicker.css" /> -->
+
+    <!--
+         You need to include this script on any page that has a Google Map.
+         When using Google Maps on your own site you MUST signup for your own API key at:
+         https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+         After your sign up replace the key in the URL below..
+        -->
+
+    <script type="text/javascript" src="js/plugins/amcharts/amcharts.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/serial.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/pie.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/gantt.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/funnel.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/radar.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/amstock.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/ammap.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/worldLow.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/light.js"></script>
+    <script type="text/javascript" src="js/plugins/amcharts/export.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/gauge.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
+
+    <script type="text/javascript" src="js/plugins/amcharts/amChartsDirective.js"></script>+
+
+    <!--  -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
+    <!-- ///keerthi graphs -->
+  <!-- ************music****** -->
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
+  <!-- ************music****** -->
+
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
+    <!-- // -->
+
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css" />
+    <script src="js/select2.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <!-- google mape api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRDHtHcptq-CRNR-Hp5wBOXy8sUauLr4E&callback=initMap"
+        async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+
+    <script async defer="defer"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC30NrqNwTru7-jFbdOR7xZsz-Wli5j2lE"
+        type="text/javascript"></script>
+    <script src="js/ng-map.min.js"></script>
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <script src="js/plugins/dataTables/angular-datatables.min.js"></script>
+    <script src="js/plugins/dataTables/angular-datatables.buttons.min.js"></script>
+    <!-- Anglar App Script -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/adminbox.js"></script>
+
+    <!-- adminbag demo js-->
+    <script src="js/adminbagdemo.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+    <script src="js/select2.min.js"></script>
+    <!-- End theme View -->
+    <!-- date differance -->
+    <script data-require="moment.js@2.10.2" data-semver="2.10.2" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+
+
+    
+    
+   
+
+</body>
+
+</html>

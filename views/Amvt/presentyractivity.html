@@ -1,0 +1,187 @@
+<div class="page-container " ng-controller="presentyractvyCtrl">
+    <!-- Start page content wrapper -->
+    <div class="page-content-wrapper animated fadeInRight  ">
+        <div class="page-content">
+            <div class="row wrapper border-bottom page-heading">
+                <div class="col-lg-12">
+                    <h2>Present Activities Details</h2>
+                   <ol class="breadcrumb">
+                        <li> <a href="#/dashboard">Home</a> </li>
+                        <li class="active"> <strong>Add Present Activities Details</strong> </li>
+                    </ol>
+                </div>
+                <div class="col-lg-12"> </div>
+            </div>
+            <div class="widgets-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="Myform">
+                            <fieldset>
+                                <div class="form-group" style="width:725px;padding-left:200px;">
+                                    <div class="input-group  col-md-5">
+                                        <div class="form-group" style="width: 900px">
+                                            <label class="col-md-2 control-label"> Heading:
+                                            </label>
+                                            <div class="input-group  col-md-5">
+                                                <input class="form-control" name="fcategory" ng-model="e.hdngg"
+                                                    required type="text" placeholder="Add Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="width:725px;padding-left:200px;">
+                                    <div class="input-group  col-md-5">
+                                        <div class="form-group" style="width: 900px">
+                                            <label class="col-md-2 control-label"> Description:
+                                            </label>
+                                            <div class="input-group  col-md-5">
+                                                <input class="form-control" name="fcategory" ng-model="e.destn"
+                                                    required type="text" placeholder="Add Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="form-group" style="width:725px;padding-left:200px;">
+                                    <div class="input-group  col-md-5">
+                                        <div class="form-group" style="width: 900px">
+                                            <label class="col-md-2 control-label">  Image:
+                                            </label>
+                                            <input type="file"
+                                                onchange="angular.element(this).scope().SelectFile(event)" />
+                                            <div class="input-group  col-md-5">
+                                                <span ng-repeat="img in reviewImg">
+                                                    <img ng-src="{{img.reviewimg}}" ng-show="img.reviewimg != null"
+                                                        alt="" style="height:100px;width:100px" />
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                </div>
+                                <div class="form-group col-md-5" style="float: center">
+                                    <div class=" col-sm-6 col-sm-offset-6">
+                                        <button class="btn aqua" type="reset" ng-disabled="Myform.$invalid"
+                                            ng-click="submitprsntactvty(e)">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="wrapper-content ">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-content collapse in">
+                                    <div class="widgets-container">
+                                        <table datatable="ng" dt-options="dtOptions"
+                                            class="table table-striped table-bordered table-hover dataTables-example"
+                                            style=" font-family: Times New Roman;    font-size: 16px; width: 100%;">
+                                            <thead style="background: #9d8cee;color: white;font-family: raleway">
+                                                <tr>
+                                                    <th>S.no</th>
+                                                    <th>Activity Heading</th>
+                                                    <th>Activity Description</th>
+                                                    <th>Images</th>
+                                                    <th>Action</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="ms in prsntactvtylst |filter:q">
+                                                    <td class="project-status" style="font-family: raleway">
+                                                        {{$index + 1}}</td>
+                                                    <td class="project-title" style="font-family: raleway">
+                                                        {{ms.pogram_heading}}</td>
+                                                        <td class="project-title" style="font-family: raleway">
+                                                            {{ms.program_desctn	}}</td>
+                                                    <td style="font-size: 21px;">
+                                                            <div class="row">
+                                                                <div class="column">
+                                                                    <a href="{{ms.program_img}} "><img src="{{ms.program_img}}"
+                                                                            style="width:40%"></a>
+                                                                </div>
+                                                            </div>
+                                                    </td>
+                                                    <td style="font-family: raleway">
+                                                        <a data-toggle="modal" data-target="#myModal"
+                                                            ng-click="Editprsntdt(ms);">
+                                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                        </a>&nbsp;&nbsp;&nbsp;
+                                                        <a ng-click="deletprsntst(ms.id);">
+                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                   
+
+                                                    
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div  id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-sm" style="width: 700px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label class="col-md-3 control-label">Team Name</label>
+                                        <div class="input-group date form_datetime col-md-6">
+                                            <input type="text" ng-model="Editprsnt.pogram_heading" class="form-control" required />
+                                        </div>
+                                        <br>
+                                        <label class="col-md-3 control-label">Team Designation</label>
+                                        <div class="input-group date form_datetime col-md-6">
+                                            <input type="text" ng-model="Editprsnt.program_desctn" class="form-control" required />
+                                        </div>
+                                        <br>
+                                        <!-- <label class="col-md-3 control-label">Team Image</label>
+                                        <div class="input-group date form_datetime col-md-6">
+                                            <input type="text" ng-model="Edittm.team_img" class="form-control" required />
+                                        </div> -->
+                                        <br>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn green" data-dismiss="modal"
+                                            ng-click="updateprsntdtls(Editprsnt)">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+    <style>
+        .modal-backdrop.in {
+            filter: alpha(opacity=50);
+            opacity: 0;
+        }
+
+        .fadeInRight {
+            -webkit-animation-name: fadeInRight;
+            animation-name: auto;
+        }
+
+        .ui-datepicker-trigger {
+            position: absolute;
+            margin-top: -28px;
+            right: 15px;
+            border: none;
+            background-color: transparent;
+        }
+    </style>

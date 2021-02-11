@@ -1,0 +1,171 @@
+[
+  {
+      "id": 1,
+      "mndl_nm": "rajanagaram",
+      "lat": 16.998710,
+      "lng": 81.779983,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 2,
+      "mndl_nm": "rajanagaram",
+      "lat": 16.996876,
+      "lng": 81.777434,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 3,
+      "mndl_nm": "rajanagaram",
+      "lat": 17.001444,
+      "lng": 81.789521,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 4,
+      "mndl_nm": "rajanagaram",
+      "lat": 17.000240,
+      "lng": 81.797773,
+      "icon": "images/plng3.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 5,
+      "mndl_nm": "rajanagaram",
+      "lat": 17.007299,
+      "lng": 81.771981,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 6,
+      "mndl_nm": "rajanagaram",
+      "lat": 17.012879,
+      "lng": 81.770693,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 7,
+      "mndl_nm": "rajanagaram",
+      "lat": 17.000362,
+      "lng": 81.774555,
+      "icon": "images/plng3.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 8,
+      "mndl_nm": "rajanagaram",
+      "lat": 16.990348,
+      "lng": 81.778264,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 9,
+      "mndl_nm": "rajanagaram",
+      "lat": 16.990552,
+      "lng": 81.775458,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 10,
+      "mndl_nm": "rajanagaram",
+      "lat": 16.989894,
+      "lng": 81.775493,
+      "icon": "images/plng3.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 11,
+      "mndl_nm": "korukonda",
+      "lat": 16.993978,
+      "lng": 81.771759,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 12,
+      "mndl_nm": "korukonda",
+      "lat": 17.010025,
+      "lng": 81.772358,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 13,
+      "mndl_nm": "korukonda",
+      "lat": 17.012655,
+      "lng": 81.779036,
+      "icon": "images/plng3.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 14,
+      "mndl_nm": "korukonda",
+      "lat": 18.06186,
+      "lng": 83.335885,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 22,
+      "mndl_nm": "korukonda",
+      "lat": 18.06186,
+      "lng": 83.335885,
+      "icon": "images/plng.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 23,
+      "mndl_nm": "korukonda",
+      "lat": 17.007212,
+      "lng": 81.800867,
+      "icon": "images/plng3.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 17,
+      "mndl_nm":"korukonda",
+      "lat": 16.972768,
+      "lng": 81.802121,
+      "icon": "images/plng2.png",
+      "ctgry": "F"
+  },
+  {
+      "id": 18,
+      "mndl_nm": "korukonda",
+      "lat": 16.973999,
+      "lng": 81.787186,
+      "icon": "images/plng.png",
+      "ctgry": "V"
+  },
+  {
+      "id": 19,
+      "mndl_nm": "korukonda",
+      "lat": 16.978659,
+      "lng": 81.795068,
+      "icon": "images/plng3.png",
+      "ctgry": "V"
+  },
+  {
+      "id": 20,
+      "mndl_nm": "korukonda",
+      "lat": 16.971742,
+      "lng": 81.798173,
+      "icon": "images/plng2.png",
+      "ctgry": "P"
+  },
+  {
+      "id": 21,
+      "mndl_nm": "seethanagaram",
+      "lat": 17.007212,
+      "lng": 81.801179,
+      "icon": "images/plng.png",
+      "ctgry": "P"
+  },
+  
+]

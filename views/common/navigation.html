@@ -1,0 +1,71 @@
+<!-- Start page sidebar wrapper -->
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar" style="position: fixed">
+        <ul class="page-sidebar-menu  page-header-fixed" style="background-color:white ;">
+            <br>
+            <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="dashboard" style="margin-top: -38px;">
+                    <i class="fa fa-th-large"></i>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+             <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="registraion">
+                    <i class="fa fa-user-o" style="color:black;"></i>
+                    <span class="title" style="font-family: raleway;color: black;font-size: 22px;">Vendor Registraion</span>
+                 </a>
+               
+            </li>
+            <br>
+            <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="item">
+                    <i class="fa fa-user-o" style="color:black;"></i>
+                    <span class="title" style="font-family: raleway;color: black;font-size: 22px;">Add Items</span>
+                 </a>
+            </li>
+            <br>
+            <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="purches">
+                    <i class="fa fa-user-o" style="color:black;"></i>
+                    <span class="title" style="font-family: raleway;color: black;font-size: 22px;">Purches Items</span>
+                 </a>
+            </li>
+            <br>
+            <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="customer">
+                    <i class="fa fa-user-o" style="color:black;"></i>
+                    <span class="title" style="font-family: raleway;color: black;font-size: 22px;">Add Custmor</span>
+                 </a>
+            </li>
+            <br>
+            <li ng-show="!checkusr" class="nav-item" ui-sref-active="active">
+                <a class="nav-link" ui-sref="sales">
+                    <i class="fa fa-user-o" style="color:black;"></i>
+                    <span class="title" style="font-family: raleway;color: black;font-size: 22px;">Sale Items</span>
+                 </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<style>
+.page-sidebar .page-sidebar-menu > li.active > a  {
+
+background: #a8c0ff !important;
+}
+
+
+.page-sidebar .page-sidebar-menu > li:hover > a  {
+    background:white;  
+
+}
+
+.page-sidebar, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover {
+   z-index: 1;
+    
+}
+
+
+
+
+</style>
